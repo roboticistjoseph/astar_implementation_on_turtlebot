@@ -58,15 +58,19 @@ Step 3: Workspace and Turtlebot (paste the following commands line by line)
 	--> git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 	--> git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 	--> cd  ../ && catkin_make
-------------------------------------------------------------------------------------------
-
-Instructions to run:
--> Open terminal
--> Run "export TURTLEBOT3_MODEL=burger"
--> After building the package using catkin_make, execute "roslaunch astar proj3.launch"
--> Upon running the code, the user will be prompted to enter deatails
--> Once the necessary details are entered, the turtlebot will follow the obtained planned path and reach the goal.
-
+-------------------------------------------------------------------------------------------
+Step 4: Running the package
+	
+	--> Download the a_star_turtlebot package and paste it in your workspace
+	--> Run "export TURTLEBOT3_MODEL=burger" in the Terminal
+	--> build the package using 'catkin build'
+	--> source it 'source devel/setup.bash'
+	--> launch the node and gazebo environment
+	--> roslaunch a_star_turtlebot proj.launch
+	--> give clearance by typing in a value between "0.03-0.07"
+	--> upon prompting give RPMs (suggested value is 10)
+	--> The node will start running in a couple of seconds
+	--> The turtlebot  will move to the goal in a minute.
 -----------------------------------------------------------
 
 
